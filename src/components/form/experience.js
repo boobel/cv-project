@@ -1,16 +1,28 @@
 import React from "react";
 
-function Experience() {
+function Experience(props) {
   return (
     <div>
        <p>Company</p>
-      <input />
+      <input 
+      name="company"
+      onChange={props.handleExperience}
+      />
       <p>Position</p>
-      <input />
+      <input 
+      name="position"
+      onChange={props.handleExperience}
+      />
       <p>From</p>
-      <input />
+      <input 
+      name="from"
+      onChange={props.handleExperience}
+      />
       <p>To</p>
-      <input />
+      <input 
+      name="to"
+      onChange={props.handleExperience}
+      />
     </div>
   );
 }
