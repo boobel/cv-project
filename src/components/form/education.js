@@ -1,18 +1,30 @@
 import React from "react";
 
-function Education() {
+const Education = (props) => {
 
 
   return (
     <div>
-      <p>Institution</p>
-      <input />
+       <p>Institution</p>
+      <input 
+      name="institution"
+      onChange={props.handleEducation}
+      />
       <p>Degree/Major</p>
-      <input />
+      <input 
+      name="major"
+      onChange={props.handleEducation}
+      />
       <p>From</p>
-      <input />
+      <input 
+      name="from"
+      onChange={props.handleEducation}
+      />
       <p>To</p>
-      <input />
+      <input 
+      name="to"
+      onChange={props.handleEducation}
+      />
     </div>
   );
 }

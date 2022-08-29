@@ -33,6 +33,9 @@ const initialEducation = {
   id: uniqid(),
 }
 
+const initialEducations = [
+
+]
 
 const  App = () => {
 
@@ -40,6 +43,7 @@ const  App = () => {
   const [Experience, setExperience] = useState(initialExperience)
   const [Experiences, setExperiences] = useState(initialExperiences)
   const [Education, setEducation] = useState(initialEducation)
+  const [Educations, setEducations] = useState(initialEducations)
 
   const handlePersonal = (e) => {
     setPersonal({
@@ -55,6 +59,13 @@ const  App = () => {
     })
   }
 
+  const handleEducation = (e) => {
+    setEducation({
+      ...Education,
+      [e.target.name]: e.target.value
+    })
+  }
+
   const handleExperiences = () => {
     setExperience({
       ...Experience,
@@ -64,7 +75,17 @@ const  App = () => {
       ...Experiences,
       Experience
     ])
-    console.log(Experiences)
+  }
+
+  const handleEducations = () => {
+    setEducation({
+      ...Education,
+      id: uniqid()
+    })
+    setEducations([
+      ...Educations,
+      Education
+    ])
   }
 
   const handleExpDelete = (id) => {
@@ -75,7 +96,13 @@ const  App = () => {
     )
   }
 
-
+  const handleEduDelete = (id) => {
+    setEducations(
+      Educations.filter(edu =>
+        edu.id !== id
+        )
+    )
+  }
 
   return (
     <div className="App">
@@ -85,11 +112,17 @@ const  App = () => {
       handleExperiences = {handleExperiences}
       handleExpDelete = {handleExpDelete}
       Experiences = {Experiences}
+      handleEducation = {handleEducation}
+      handleEducations ={handleEducations}
+      handleEduDelete = {handleEduDelete}
+      Educations = {Educations}
       />
-      <Preview 
+      <Preview
+      Personal = {Personal} 
       Experience = {Experience}
       Experiences = {Experiences}
-      Personal = {Personal}
+      Education = {Education}
+      Educations = {Educations}
       />
     </div>
   );
