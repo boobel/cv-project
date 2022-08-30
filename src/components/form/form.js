@@ -2,6 +2,8 @@ import React from "react";
 import Education from "./education";
 import Experience from "./experience";
 import Personal from "./personal";
+import '../../style/form.css';
+
 
 const Form = (props) => {
   return (

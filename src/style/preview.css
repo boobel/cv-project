@@ -1,0 +1,69 @@
+.preview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid 3px black;
+    margin: 3%;
+}
+
+.personal {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 75%;
+}
+
+.names {
+    display: flex;
+    gap: 5%;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.contact {
+    margin-right: 25px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.where {
+    font-weight: bold;
+}
+
+.work * {
+    margin: 0;
+}
+
+.when {
+  display: flex;
+  justify-content: space-between;
+  gap: 15%;
+  margin-right: 25px;
+}
+
+.when * {
+  margin: 0;
+}
+
+.what {
+    font-weight: bold;
+    font-size: 75%;
+}
+
+h2 {
+    margin: 3%;
+}

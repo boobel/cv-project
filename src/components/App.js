@@ -11,6 +11,7 @@ const initialPersonal = {
   adress: '',
   phone: '',
   email: '',
+  website: '',
 }
 
 const initialExperience = {
@@ -18,6 +19,7 @@ const initialExperience = {
   position: '',
   from: '',
   to: '',
+  achievements: '',
   id: uniqid(),
 }
 
@@ -30,6 +32,7 @@ const initialEducation = {
   major: '',
   from: '',
   to: '',
+  achievements: '',
   id: uniqid(),
 }
 
@@ -75,9 +78,13 @@ const  App = () => {
       ...Experiences,
       Experience
     ])
+    let inputs = document.querySelectorAll('.expInput')
+    inputs.forEach((input) => {
+      input.value = '';
+    })
   }
 
-  const handleEducations = () => {
+  const handleEducations = (e) => {
     setEducation({
       ...Education,
       id: uniqid()
@@ -86,6 +93,10 @@ const  App = () => {
       ...Educations,
       Education
     ])
+    let inputs = document.querySelectorAll('.eduInput')
+    inputs.forEach((input) => {
+      input.value = '';
+    })
   }
 
   const handleExpDelete = (id) => {

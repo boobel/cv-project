@@ -13,11 +13,6 @@ const Personal = (props) => {
             name="surname"
             onChange={props.handlePersonal}
             />
-            <p>Adress</p>
-            <input 
-            name="adress"
-            onChange={props.handlePersonal}
-            />
             <p>Phone Number</p>
             <input 
             name="phone"
@@ -26,6 +21,16 @@ const Personal = (props) => {
             <p>Email</p>
             <input 
             name="email"
+            onChange={props.handlePersonal}
+            />
+            <p>Website</p>
+            <input
+            name="website"
+            onChange={props.handlePersonal}
+            />
+            <p>Adress</p>
+            <input 
+            name="adress"
             onChange={props.handlePersonal}
             />
         </div>

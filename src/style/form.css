@@ -1,0 +1,21 @@
+form {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    width: 30vw;
+    margin: 3%;
+    border: solid 3px black;
+}
+
+button {
+    padding: 2%;
+    padding-left: 9%;
+    padding-right: 9%;
+    margin-top: 5%;
+    background-color: white;
+}
+
+#achievements {
+    height: 50px;
+    width: 140px;
+}
