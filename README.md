@@ -1,10 +1,10 @@
-#CV creator App
+CV creator App
 
 A basic CV generator App, showcases basic knowledge of props,states, hooks and general ability to work with the React framework
 
-##Link
+Link: 
 
-##To Do
+To Do
 
 Edge cases
 
